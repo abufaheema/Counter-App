@@ -27,21 +27,24 @@ class Counter extends Component {
       <div className="container my-5">
         <div className="card text-center my-5 shadow border border-4">
           <div className="card-body">
-            <h1 className="text-primary fw-bold">Counter App</h1>
+            <h1 className="text-primary fw-bold ">Counter App</h1>
             <div className="my-5">
               <h2 className="my-5 text-primary fw-bold">{this.state.count}</h2>
-              <button className="btn btn-success mx-3" onClick={this.increment}>
+              <button
+                className="btn btn-success mx-3 increment"
+                onClick={this.increment}
+              >
                 Increment
               </button>
               <button
-                className="btn btn-danger mx-3"
+                className="btn btn-danger mx-3 increment"
                 onClick={this.decrement}
                 disabled={this.state.count === 0}
               >
                 Decrement
               </button>
               <button
-                className="btn btn-secondary mx-3"
+                className="btn btn-secondary mx-3 increment"
                 onClick={this.reset}
                 disabled={this.state.count === 0}
               >
